@@ -1,0 +1,20 @@
+
+
+.poruka-box {
+  position: absolute;
+  bottom: 3rem;
+  right: 50px;
+  width: 70%;
+  padding: 1rem 2.5rem;
+  background-color: rgb(47, 46, 46, 0.5);
+  color: bisque;
+
+
+
+  @media screen and (max-width: 540px) {
+      right: 0;
+      width: 100%;
+
+  }
+
+}
