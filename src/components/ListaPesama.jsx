@@ -35,7 +35,6 @@ const ListaPesama = () => {
   `)
 
 
-
   const pesme = data.allFile.edges
 
 
@@ -44,32 +43,6 @@ const ListaPesama = () => {
         <h1>Duhovnost u stihovima</h1>
 
         <div className='lista-pesme'>
-
-
-          {/*<ul className="list-group list-group-light">*/}
-          {/*  {pesme.map(({node}) => {*/}
-
-          {/*    // const pesmaName = node.childMarkdownRemark.parent.name*/}
-
-          {/*    return(*/}
-
-          {/*          <li>*/}
-
-
-
-          {/*               {node.childMarkdownRemark.frontmatter.title}*/}
-          {/*                <p className="text-muted mb-0">{node.childMarkdownRemark.frontmatter.date}</p>*/}
-
-
-          {/*            /!*<a className="btn btn-link btn-rounded btn-sm" href="#" role="button">View</a>*!/*/}
-          {/*            /!*<i className="fas fa-hands-praying ruke-ikona"></i>*!/*/}
-          {/*          </li>*/}
-
-          {/*    )*/}
-          {/*  })}*/}
-          {/*</ul>*/}
-
-
 
           <ul className="list-group list-group-light">
             {pesme.map(({node}) => {

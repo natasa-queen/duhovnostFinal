@@ -1,0 +1,37 @@
+
+.pesma-kontejner {
+  max-width: 540px;
+  min-height: 90vh;
+  margin: 5rem auto;
+
+
+  .naslov-datum {
+
+    .naslov {
+      text-align: center;
+    }
+    .datum {
+      text-align: left;
+      font-size: 1.1rem;
+      padding: 0 0 0 2rem;
+      margin: 0;
+    }
+    .objavljeno {
+      text-align: left;
+      font-size: 1rem;
+      padding: 0 0 0 2rem;
+      margin: 0;
+    }
+  }
+
+  .tekst-pesme {
+    text-align: center;
+  }
+
+  .dugme-nazad {
+    width: 100%;
+    margin: 2rem auto;
+
+  }
+
+}

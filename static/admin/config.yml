@@ -7,7 +7,8 @@ public_folder: ../../static/images/
 
 collections:
   - name: 'pesme'
-    preview: false
+    editor:
+      preview: false
     label: 'Pesme'
     folder: 'content/pesme'
     create: true
