@@ -18,7 +18,7 @@
     }
     .objavljeno {
       text-align: left;
-      font-size: 1rem;
+      font-size: 0.7rem;
       padding: 0 0 0 2rem;
       margin: 0;
     }
@@ -27,6 +27,11 @@
   .tekst-pesme {
     text-align: center;
     white-space: pre-wrap;
+    margin-top: 2rem;
+
+    p {
+      margin: 0;
+    }
   }
 
   .dugme-nazad {
