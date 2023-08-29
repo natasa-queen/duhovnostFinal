@@ -17,3 +17,13 @@ collections:
       - {label: 'Datum', name: 'date', widget: 'date'}
       - {label: 'Objavljeno', name: 'objavljeno', widget: 'string', required: false}
       - {label: 'Pesma', name: 'body', widget: 'text'}
+
+  - name: 'poruke'
+    preview: false
+    label: 'Poruke'
+    folder: 'content/poruke'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Pisac', name: 'title', widget: 'string' }
+      - { label: 'Poruka', name: 'body', widget: 'text' }
