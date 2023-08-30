@@ -1,5 +1,18 @@
 import React from 'react'
 import '../assets/css/footer.scss'
+import { Link } from 'gatsby'
+
+import {
+  FacebookIcon,
+  FacebookShareButton,
+  FacebookMessengerIcon,
+  FacebookShareCount,
+  ViberIcon,
+  ViberShareButton,
+  WhatsappShareButton,
+  WhatsappIcon,
+} from "react-share";
+
 
 
 const Footer = () => {
@@ -26,34 +39,55 @@ const Footer = () => {
             ><i className="fab fa-instagram"></i
             ></a>
 
+            <ViberShareButton title='Duhovnost' url='https://duhovnost.netlify.app/' >
+              <ViberIcon size={32} round={true} />
+            </ViberShareButton>
 
-            <a
-                className="btn btn-link btn-floating btn-lg text-dark m-1"
-                href="https://www.facebook.com/sharer/sharer.php?u=https://duhovnost.netlify.app/"
-                target="_blank"
-                rel="nofollow noopener"
-                role="button"
-                data-mdb-ripple-color="dark"
-            > Podeli link FB
-          </a>
-            <a
-                className="btn btn-link btn-floating btn-lg text-dark m-1"
-                href="viber://forward?text=https://duhovnost.netlify.app/"
-                target="_blank"
-                rel="nofollow noopener"
-                role="button"
-                data-mdb-ripple-color="dark"
-            > Podeli link VIBER
-            </a>
-            <a
-                className="btn btn-link btn-floating btn-lg text-dark m-1"
-                href="whatsapp://send?text=https://duhovnost.netlify.app/"
-                target="_blank"
-                rel="nofollow noopener"
-                role="button"
-                data-mdb-ripple-color="dark"
-            > Podeli link WHATSAPP
-            </a>
+            <FacebookShareButton title='Duhovnost' url='https://duhovnost.netlify.app/' >
+              <FacebookMessengerIcon size={32} round={true} />
+            </FacebookShareButton>
+
+            {/*<FacebookShareCount title='Duhovnost' url='https://duhovnost.netlify.app/' >*/}
+            {/*  <FacebookMessengerIcon size={32} round={true} />*/}
+            {/*</FacebookShareCount>*/}
+            <FacebookShareCount url='https://duhovnost.netlify.app/'>
+              {shareCount => <span >{shareCount}</span>}
+            </FacebookShareCount>
+
+            <WhatsappShareButton title='Duhovnost' url='https://duhovnost.netlify.app/' >
+              <WhatsappIcon size={32} round={true} />
+            </WhatsappShareButton>
+
+
+
+
+          {/*  <a*/}
+          {/*      className="btn btn-link btn-floating btn-lg text-dark m-1"*/}
+          {/*      href="https://www.facebook.com/sharer/sharer.php?u=https://duhovnost.netlify.app/"*/}
+          {/*      target="_blank"*/}
+          {/*      rel="nofollow noopener"*/}
+          {/*      role="button"*/}
+          {/*      data-mdb-ripple-color="dark"*/}
+          {/*  > Podeli link FB*/}
+          {/*</a>*/}
+          {/*  <a*/}
+          {/*      className="btn btn-link btn-floating btn-lg text-dark m-1"*/}
+          {/*      href="viber://forward?text=https://duhovnost.netlify.app/"*/}
+          {/*      target="_blank"*/}
+          {/*      rel="nofollow noopener"*/}
+          {/*      role="button"*/}
+          {/*      data-mdb-ripple-color="dark"*/}
+          {/*  > Podeli link VIBER*/}
+          {/*  </a>*/}
+          {/*  <a*/}
+          {/*      className="btn btn-link btn-floating btn-lg text-dark m-1"*/}
+          {/*      href="whatsapp://send?text=https://duhovnost.netlify.app/"*/}
+          {/*      target="_blank"*/}
+          {/*      rel="nofollow noopener"*/}
+          {/*      role="button"*/}
+          {/*      data-mdb-ripple-color="dark"*/}
+          {/*  > Podeli link WHATSAPP*/}
+          {/*  </a>*/}
 
 
           </section>
