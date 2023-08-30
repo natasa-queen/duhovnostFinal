@@ -1,13 +1,14 @@
 .background {
-  width: 500px;
+  width: 80vw;
   height: 100%;
-  background-size: cover;
+  background-size: contain;
   background-position: top;
+  background-repeat: no-repeat;
   position: absolute;
   z-index: -9;
   margin: 0 auto;
-  opacity: 0.1;
+  opacity: 0.2;
   //transition: background-image 5s ease-in-out;
 
-  //border: 1px solid red;
+  //border: 1px solid white;
 }
