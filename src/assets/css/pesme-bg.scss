@@ -1,0 +1,13 @@
+.background {
+  width: 500px;
+  height: 100%;
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  z-index: -9;
+  margin: 0 auto;
+  opacity: 0.1;
+  //transition: background-image 5s ease-in-out;
+
+  //border: 1px solid red;
+}
