@@ -6,6 +6,7 @@ import {
   FacebookIcon,
   FacebookShareButton,
   FacebookMessengerIcon,
+  FacebookMessengerShareButton,
   FacebookShareCount,
   ViberIcon,
   ViberShareButton,
@@ -39,13 +40,15 @@ const Footer = () => {
             ><i className="fab fa-instagram"></i
             ></a>
 
-            <ViberShareButton title='Duhovnost' url='https://duhovnost.netlify.app/' >
-              <ViberIcon size={32} round={true} />
-            </ViberShareButton>
 
-            <FacebookShareButton title='Duhovnost' url='https://duhovnost.netlify.app/' >
-              <FacebookMessengerIcon size={32} round={true} />
-            </FacebookShareButton>
+
+            {/*<ViberShareButton title='Duhovnost' url='https://duhovnost.netlify.app/' >*/}
+            {/*  <ViberIcon size={32} round={true} />*/}
+            {/*</ViberShareButton>*/}
+
+            {/*<FacebookMessengerShareButton  url='https://duhovnost.netlify.app/' >*/}
+            {/*  <FacebookMessengerIcon size={32} round={true} />*/}
+            {/*</FacebookMessengerShareButton>*/}
 
             {/*<FacebookShareCount title='Duhovnost' url='https://duhovnost.netlify.app/' >*/}
             {/*  <FacebookMessengerIcon size={32} round={true} />*/}
@@ -54,9 +57,9 @@ const Footer = () => {
             {/*  {shareCount => <span >{shareCount}</span>}*/}
             {/*</FacebookShareCount>*/}
 
-            <WhatsappShareButton title='Duhovnost' url='https://duhovnost.netlify.app/' >
-              <WhatsappIcon size={32} round={true} />
-            </WhatsappShareButton>
+            {/*<WhatsappShareButton title='Duhovnost' url='https://duhovnost.netlify.app/' >*/}
+            {/*  <WhatsappIcon size={32} round={true} />*/}
+            {/*</WhatsappShareButton>*/}
 
 
 
