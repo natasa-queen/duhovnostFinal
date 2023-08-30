@@ -50,9 +50,9 @@ const Footer = () => {
             {/*<FacebookShareCount title='Duhovnost' url='https://duhovnost.netlify.app/' >*/}
             {/*  <FacebookMessengerIcon size={32} round={true} />*/}
             {/*</FacebookShareCount>*/}
-            <FacebookShareCount url='https://duhovnost.netlify.app/'>
-              {shareCount => <span >{shareCount}</span>}
-            </FacebookShareCount>
+            {/*<FacebookShareCount url='https://duhovnost.netlify.app/'>*/}
+            {/*  {shareCount => <span >{shareCount}</span>}*/}
+            {/*</FacebookShareCount>*/}
 
             <WhatsappShareButton title='Duhovnost' url='https://duhovnost.netlify.app/' >
               <WhatsappIcon size={32} round={true} />
