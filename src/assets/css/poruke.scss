@@ -8,8 +8,13 @@
   padding: 1rem 2.5rem;
   background-color: rgb(47, 46, 46, 0.5);
   color: var(--zlatna);
+  //font-size: smaller;
 
   .quote {
+
+    .blockquote {
+
+    }
 
     .blockquote-footer {
       color: rgba(245, 245, 245, 0.72);
@@ -21,6 +26,19 @@
   @media screen and (max-width: 540px) {
       right: 0;
       width: 100%;
+
+    .quote {
+
+      .blockquote {
+        font-size: 1rem;
+      }
+
+      .blockquote-footer {
+        color: rgba(245, 245, 245, 0.72);
+        font-size: 0.7rem;
+
+      }
+    }
 
   }
 
