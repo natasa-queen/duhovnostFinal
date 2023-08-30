@@ -7,22 +7,28 @@
     text-align: center;
     margin: 1rem 0;
     font-family: 'Parisienne', serif;
-    color: cornflowerblue;
+    color: var(--zelena);
+    font-weight: 700;
   }
 
   .lista-pesme {
     margin-bottom: 2rem;
 
+
     ul {
 
+
       li {
+        background-color: #78A4BF;
+        border-radius: 10px;
+        border: 1px solid var(--zlatna);
 
         .naslov-pesme {
-          color: red;
+          color: var(--crvena);
           font-size: 1.5rem;
         }
         .ruke-ikona {
-          color: green;
+          color: var(--zlatna);
           font-size: 2.5rem;
           padding-right: 1.6rem;
         }

@@ -5,7 +5,7 @@
   margin: 5rem auto;
   padding: 0.5rem;
   border-radius: 10px;
-  background-color: rgba(100, 149, 237, 0.37);
+  background-color: rgba(100, 149, 237, 0.24);
 
   //border: 1px solid white;
 
@@ -13,6 +13,8 @@
 
     .naslov {
       text-align: center;
+      color: #008348;
+      font-weight: bold;
     }
     .datum {
       text-align: left;

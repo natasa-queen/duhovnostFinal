@@ -7,7 +7,14 @@
   width: 70%;
   padding: 1rem 2.5rem;
   background-color: rgb(47, 46, 46, 0.5);
-  color: bisque;
+  color: var(--zlatna);
+
+  .quote {
+
+    .blockquote-footer {
+      color: rgba(245, 245, 245, 0.72);
+    }
+  }
 
 
 

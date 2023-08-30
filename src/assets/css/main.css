@@ -1,3 +1,11 @@
+
+:root {
+    --crvena: #a20000;
+    --zlatna: #fdc469;
+    --zelena: #008348;
+    --ljubicasta: #592b5e;
+}
+
 body {
-    background-color: pink;
+    background-color: #78A4BF;
 }
