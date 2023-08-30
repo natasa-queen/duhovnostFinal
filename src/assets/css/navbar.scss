@@ -22,8 +22,7 @@ nav {
 
     a {
       text-decoration: none;
-      //color: var(--zelena);
-      color: blue;
+      color: var(--zlatna);
     }
   }
 
@@ -37,14 +36,14 @@ nav {
       a {
         text-decoration: none;
         //color: var(--zelena);
-        color: white;
+        color: var(--zlatna);
         padding-left: 2rem;
         &:hover {
-          color: var(--crvena);
+          color: #c58721;
         }
       }
       .active {
-        color: blue;
+        color: var(--zlatna);
       }
     }
   }
@@ -66,7 +65,7 @@ nav {
       padding-top: 6rem;
 
       li {
-        border-bottom: 1px solid #eeeeee
+        border-bottom: 1px solid var(--zlatna);
       }
     }
 
@@ -81,12 +80,12 @@ nav {
 
         &:nth-child(1) {
           transform: translateY(15px) rotate(45deg);
-          background-color: blue;
+          background-color: var(--zlatna);
         }
 
         &:nth-child(3) {
           transform: translateY(1px) rotate(-45deg);
-          background-color: blue;
+          background-color: var(--zlatna);
         }
       }
     }
@@ -98,7 +97,7 @@ nav {
       .bar {
         width: 2.4rem;
         height: 0.05rem;
-        background-color: blue;
+        background-color: var(--zlatna);
         display: block;
         margin: 6px 0;
         transition: all 0.6s ease;
