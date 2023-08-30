@@ -25,6 +25,36 @@ const Footer = () => {
                 data-mdb-ripple-color="dark"
             ><i className="fab fa-instagram"></i
             ></a>
+
+
+            <a
+                className="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="https://www.facebook.com/sharer/sharer.php?u=https://duhovnost.netlify.app/"
+                target="_blank"
+                rel="nofollow noopener"
+                role="button"
+                data-mdb-ripple-color="dark"
+            > Podeli link FB
+          </a>
+            <a
+                className="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="viber://forward?text=https://duhovnost.netlify.app/"
+                target="_blank"
+                rel="nofollow noopener"
+                role="button"
+                data-mdb-ripple-color="dark"
+            > Podeli link VIBER
+            </a>
+            <a
+                className="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="whatsapp://send?text=https://duhovnost.netlify.app/"
+                target="_blank"
+                rel="nofollow noopener"
+                role="button"
+                data-mdb-ripple-color="dark"
+            > Podeli link WHATSAPP
+            </a>
+
           </section>
         </div>
 
