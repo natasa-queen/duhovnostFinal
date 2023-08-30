@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Link, graphql, useStaticQuery } from "gatsby";
 
 import '../assets/css/lista-pesama.scss'
+
+import AOS from 'aos'
+
 
 
 const ListaPesama = () => {
@@ -37,12 +40,18 @@ const ListaPesama = () => {
 
   const pesme = data.allFile.edges
 
+  useEffect( () => {
+    AOS.init({duration:1500})
+  }, [])
+
 
   return(
       <div className='lista-kontejner'>
         <h1>Duhovnost u stihovima</h1>
 
-        <div className='lista-pesme'>
+        <div className='lista-pesme' data-aos="fade-up"
+             // data-aos-anchor-placement="center-bottom"
+             data-aos-once="true">
 
           <ul className="list-group list-group-light">
             {pesme.map(({node}) => {

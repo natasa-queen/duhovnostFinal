@@ -1,6 +1,9 @@
-import React, { useState } from "react";
-import { graphql, useStaticQuery } from "gatsby"; // Dodato
+import React, {useEffect, useState} from "react";
+import { graphql, useStaticQuery } from "gatsby";
 import '../assets/css/pesme-bg.scss'
+
+import AOS from 'aos'
+
 
 const BackgroundChanger = () => {
   const data = useStaticQuery(graphql`
@@ -17,70 +20,27 @@ const BackgroundChanger = () => {
 
   const randomImageUrls = data.allFile.edges.map(edge => edge.node.publicURL);
 
-  // Nasumično izaberemo sliku samo jednom prilikom prvog renderovanja komponente
   const [backgroundImage] = useState(
       randomImageUrls[Math.floor(Math.random() * randomImageUrls.length)]
   );
 
+
+  useEffect( () => {
+    AOS.init({duration:1500})
+  }, [])
+
+
   return (
       <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-once="true"
           className="background"
-          style={{ backgroundImage: `url(${backgroundImage})` }}
+          style={{ backgroundImage: `url(${backgroundImage})`, opacity: 0.3}}
+
       />
   );
 };
 
 export default BackgroundChanger;
-
-
-
-
-
-
-
-// import React, { useState, useEffect } from "react";
-// import { graphql, useStaticQuery } from "gatsby"; // Dodato
-// import '../assets/css/pesme-bg.scss'
-//
-// const BackgroundChanger = () => {
-//   const data = useStaticQuery(graphql`
-//     query {
-//       allFile(filter: { extension: { regex: "/png/" }, relativeDirectory: { eq: "pesme-bg" } }) {
-//         edges {
-//           node {
-//             publicURL
-//           }
-//         }
-//       }
-//     }
-//   `);
-//
-//   const randomImageUrls = data.allFile.edges.map(edge => edge.node.publicURL);
-//
-//   const [backgroundImage, setBackgroundImage] = useState(
-//       randomImageUrls[0]
-//   );
-//
-//   const changeBackground = () => {
-//     const randomIndex = Math.floor(Math.random() * randomImageUrls.length);
-//     setBackgroundImage(randomImageUrls[randomIndex]);
-//   };
-//
-//   useEffect(() => {
-//     const interval = setInterval(changeBackground, 5000); // Promeni sliku svakih 5 sekundi
-//     return () => clearInterval(interval);
-//   }, []);
-//
-//   return (
-//       <div
-//           className="background"
-//           style={{ backgroundImage: `url(${backgroundImage})` }}
-//       />
-//   );
-// };
-//
-// export default BackgroundChanger;
-
-
-
 

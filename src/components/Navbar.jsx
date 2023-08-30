@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'gatsby'
 import '../assets/css/navbar.scss'
 
+import AOS from 'aos'
+
 
 const Navbar = () => {
 
@@ -28,17 +30,23 @@ const Navbar = () => {
     }, []);
 
 
+
+  useEffect( () => {
+    AOS.init({duration:1500})
+  }, [])
+
+
     return(
-        <nav>
-            <div className='logo'>
+        <nav data-aos="fade-down"  >
+            <div className='logo' >
                 <Link to='/'><h2>Nataša Tofil</h2></Link>
             </div>
 
             <ul ref={menuRef} className={show ? `menu-items active` : `menu-items`}>
-                <li><Link to='/' onClick={() => setShow(false)} activeClassName='active'>Početna</Link></li>
+                <li><Link to='/' onClick={() => setShow(false)} activeClassName='active' >Početna</Link></li>
                 {/* <li><Link to='/' onClick={() => setShow(false)}>O meni</Link></li> */}
                 {/* <li><Link to='/recepti' onClick={() => setShow(false)}>Recepti</Link></li> */}
-                <li><Link to='/galerija' onClick={() => setShow(false)} activeClassName='active'>Galerija</Link></li>
+                <li><Link to='/galerija' onClick={() => setShow(false)} activeClassName='active' >Galerija</Link></li>
             </ul>
 
             <div
