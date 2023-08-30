@@ -20,7 +20,7 @@ export default function Pesma({ data }) {
 
             <div className='pesma-kontejner shadow-5 '>
 
-                <BackgroundChanger />
+                {/*<BackgroundChanger />*/}
 
                 <div className='inner-kontejner'>
                     <div className="naslov-datum ">
@@ -29,7 +29,11 @@ export default function Pesma({ data }) {
                         <h3 className='objavljeno'>{objavljeno}</h3>
                     </div>
 
-                    <div dangerouslySetInnerHTML={{__html: html}} className='tekst-pesme text-light' />
+                    <div className='tekst-kontejner'>
+                        <BackgroundChanger className='pozadina' />
+
+                        <div dangerouslySetInnerHTML={{__html: html}} className='tekst-pesme text-light' />
+                    </div>
 
                     <Link className="btn btn-primary  bg-primary bg-gradient dugme-nazad" to="/" role="button">Nazad</Link>
                 </div>

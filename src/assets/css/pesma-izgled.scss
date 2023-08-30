@@ -9,40 +9,55 @@
 
   //border: 1px solid white;
 
-  .naslov-datum {
+  .inner-kontejner {
 
-    .naslov {
-      text-align: center;
-      color: #008348;
-      font-weight: bold;
-    }
-    .datum {
-      text-align: left;
-      font-size: 1.1rem;
-      padding: 0 0 0 2rem;
-      margin: 0;
-    }
-    .objavljeno {
-      text-align: left;
-      font-size: 0.7rem;
-      padding: 0 0 0 2rem;
-      margin: 0;
-    }
-  }
+    .naslov-datum {
 
-  .tekst-pesme {
-    text-align: center;
-    white-space: pre-wrap;
-    margin-top: 2rem;
-
-    p {
-      margin: 0;
+      .naslov {
+        text-align: center;
+        color: #008348;
+        font-weight: bold;
+      }
+      .datum {
+        text-align: left;
+        font-size: 1.1rem;
+        padding: 0 0 0 2rem;
+        margin: 0;
+        color: #1c3e72;
+      }
+      .objavljeno {
+        text-align: left;
+        font-size: 0.7rem;
+        padding: 0 0 0 2rem;
+        margin: 0;
+        color: #1c3e72;
+      }
     }
-  }
 
-  .dugme-nazad {
-    width: 100%;
-    margin: 2rem auto;
+    .tekst-kontejner {
+
+      .pozadina {
+
+      }
+
+      .tekst-pesme {
+        text-align: center;
+        white-space: pre-wrap;
+        margin-top: 2rem;
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+
+
+
+    .dugme-nazad {
+      width: 100%;
+      margin: 2rem auto;
+
+    }
 
   }
 
