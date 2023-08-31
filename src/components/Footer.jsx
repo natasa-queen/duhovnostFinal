@@ -51,11 +51,11 @@ const Footer = () => {
               <FacebookMessengerIcon size={22} round={true} />
             </FacebookMessengerShareButton>
 
-            <ViberShareButton url={shareUrl} >
+            <ViberShareButton url="viber://forward?text=https://duhovnost.netlify.app/" >
               <ViberIcon size={22} round={true} />
             </ViberShareButton>
 
-            <WhatsappShareButton url={shareUrl} >
+            <WhatsappShareButton url="whatsapp://send?text=https://duhovnost.netlify.app/" >
               <WhatsappIcon size={22} round={true} />
             </WhatsappShareButton>
 
