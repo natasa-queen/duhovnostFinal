@@ -56,9 +56,9 @@ const Footer = () => {
               <ViberIcon size={22} round={true} />
             </ViberShareButton>
 
-            <WhatsappShareButton url="whatsapp://send?text=https://duhovnost.netlify.app/" >
-              <WhatsappIcon size={22} round={true} />
-            </WhatsappShareButton>
+            {/*<WhatsappShareButton url="whatsapp://send?text=https://duhovnost.netlify.app/" >*/}
+            {/*  <WhatsappIcon size={22} round={true} />*/}
+            {/*</WhatsappShareButton>*/}
 
 
             {/*<Dropdown>*/}
