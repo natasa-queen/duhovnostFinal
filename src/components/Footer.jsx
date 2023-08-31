@@ -47,7 +47,8 @@ const Footer = () => {
             ></a>
 
 
-            <FacebookMessengerShareButton url={shareUrl} appId="YOUR_FACEBOOK_APP_ID">
+            {/*<FacebookMessengerShareButton url={shareUrl} appId="YOUR_FACEBOOK_APP_ID">*/}
+            <FacebookMessengerShareButton url="fb-messenger://share/?link=https://duhovnost.netlify.app" appId="YOUR_FACEBOOK_APP_ID">
               <FacebookMessengerIcon size={22} round={true} />
             </FacebookMessengerShareButton>
 
