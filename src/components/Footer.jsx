@@ -66,30 +66,30 @@ const Footer = () => {
             ></a>
 
 
-            <FacebookMessengerShareButton url={shareUrl} appId="YOUR_FACEBOOK_APP_ID">
-              <FacebookMessengerIcon size={22} round={true} />
-            </FacebookMessengerShareButton>
+            {/*<FacebookMessengerShareButton url={shareUrl} appId="YOUR_FACEBOOK_APP_ID">*/}
+            {/*  <FacebookMessengerIcon size={22} round={true} />*/}
+            {/*</FacebookMessengerShareButton>*/}
 
-            <ViberShareButton url="viber://forward?text=https://duhovnost.netlify.app/" >
-              <ViberIcon size={22} round={true} />
-            </ViberShareButton>
+            {/*<ViberShareButton url="viber://forward?text=https://duhovnost.netlify.app/" >*/}
+            {/*  <ViberIcon size={22} round={true} />*/}
+            {/*</ViberShareButton>*/}
 
-            <WhatsappShareButton url="whatsapp://send?text=https://duhovnost.netlify.app/" >
-              <WhatsappIcon size={22} round={true} />
-            </WhatsappShareButton>
-
-
+            {/*<WhatsappShareButton url="whatsapp://send?text=https://duhovnost.netlify.app/" >*/}
+            {/*  <WhatsappIcon size={22} round={true} />*/}
+            {/*</WhatsappShareButton>*/}
 
 
-              <section className="kopi-text">
-                {copied ? <span className='kopirano'>Kopirano.</span> : null}
-              </section>
 
-              <section className="section">
-                <CopyToClipboard onCopy={onCopy} text='https://duhovnost.netlify.app'>
-                  <button>Kopiraj link</button>
-                </CopyToClipboard>
-              </section>
+
+            {/*  <section className="kopi-text">*/}
+            {/*    {copied ? <span className='kopirano'>Kopirano.</span> : null}*/}
+            {/*  </section>*/}
+
+            {/*  <section className="section">*/}
+            {/*    <CopyToClipboard onCopy={onCopy} text='https://duhovnost.netlify.app'>*/}
+            {/*      <button>Kopiraj link</button>*/}
+            {/*    </CopyToClipboard>*/}
+            {/*  </section>*/}
 
 
             <div>
@@ -101,7 +101,7 @@ const Footer = () => {
                   }}
                   onClick={() => console.log("shared successfully!")}
               >
-                <button>Podijeli 🔗</button>
+                <button className='podeli-dugme'>Podijeli 🔗</button>
               </RWebShare>
             </div>
 
