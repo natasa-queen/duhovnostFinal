@@ -3,6 +3,11 @@ import '../assets/css/footer.scss'
 
 import Dropdown from 'react-bootstrap/Dropdown';
 
+import {CopyToClipboard} from 'react-copy-to-clipboard';
+
+import { RWebShare } from "react-web-share";
+
+
 import {
   FacebookIcon,
   FacebookShareButton,
@@ -26,6 +31,20 @@ const Footer = () => {
   const shareTitle = 'Duhovnost u stihovima';
   // const shareImageUrl = 'https://www.example.com/image.jpg'; // Zamijenite ovom URL-om slike
 
+
+
+  const [copied, setCopied] = React.useState(false);
+
+  const onCopy = React.useCallback(() => {
+    setCopied(true);
+
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000); // Set the timeout to 2000 milliseconds (2 seconds)
+  }, []);
+
+
+
   return(
       <footer className="text-center text-white" >
         <div className="container pt-1">
@@ -47,8 +66,7 @@ const Footer = () => {
             ></a>
 
 
-            {/*<FacebookMessengerShareButton url={shareUrl} appId="YOUR_FACEBOOK_APP_ID">*/}
-            <FacebookMessengerShareButton url="fb-messenger://share/?link=https://duhovnost.netlify.app" appId="YOUR_FACEBOOK_APP_ID">
+            <FacebookMessengerShareButton url={shareUrl} appId="YOUR_FACEBOOK_APP_ID">
               <FacebookMessengerIcon size={22} round={true} />
             </FacebookMessengerShareButton>
 
@@ -56,9 +74,42 @@ const Footer = () => {
               <ViberIcon size={22} round={true} />
             </ViberShareButton>
 
-            {/*<WhatsappShareButton url="whatsapp://send?text=https://duhovnost.netlify.app/" >*/}
-            {/*  <WhatsappIcon size={22} round={true} />*/}
-            {/*</WhatsappShareButton>*/}
+            <WhatsappShareButton url="whatsapp://send?text=https://duhovnost.netlify.app/" >
+              <WhatsappIcon size={22} round={true} />
+            </WhatsappShareButton>
+
+
+
+
+              <section className="kopi-text">
+                {copied ? <span className='kopirano'>Kopirano.</span> : null}
+              </section>
+
+              <section className="section">
+                <CopyToClipboard onCopy={onCopy} text='https://duhovnost.netlify.app'>
+                  <button>Kopiraj link</button>
+                </CopyToClipboard>
+              </section>
+
+
+            <div>
+              <RWebShare
+                  data={{
+                    text: "Natasina Duhovnost u stihovima",
+                    url: "https://duhovnost.netlify.app",
+                    title: "Duhovnost u stihovima",
+                  }}
+                  onClick={() => console.log("shared successfully!")}
+              >
+                <button>Podijeli 🔗</button>
+              </RWebShare>
+            </div>
+
+
+
+
+
+
 
 
             {/*<Dropdown>*/}
@@ -90,3 +141,59 @@ const Footer = () => {
   )
 }
 export default Footer
+
+
+
+
+//
+// const [value, setValue] = React.useState('https://duhovnost.netlify.app');
+// const [copied, setCopied] = React.useState(false);
+//
+//
+// const onClick = React.useCallback(({target: {innerText}}) => {
+//   console.log(`Clicked on "${innerText}"!`);
+// }, [])
+//
+// const onCopy = React.useCallback(() => {
+//   setCopied(true);
+// }, [])
+//
+// return (
+//     <div className="app">
+//
+//       <section className="section">
+//         <h2>1. Button</h2>
+//         <CopyToClipboard onCopy={onCopy} text={value}>
+//           <button>Copy to clipboard with button</button>
+//         </CopyToClipboard>
+//       </section>
+//
+//
+//       <section className="section">
+//         {copied ? <span style={{color: 'red'}}>Copied.</span> : null}
+//       </section>
+//
+//       <section className="section">
+//         <textarea cols="22" rows="3" style={{marginTop: '1em'}} />
+//       </section>
+//     </div>
+// );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
