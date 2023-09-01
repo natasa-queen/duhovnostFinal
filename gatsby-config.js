@@ -7,14 +7,16 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+
 module.exports = {
 
   siteMetadata:{
     title: "Nataša",
-    description: "Moj sajt za poeziju",
+    description: "Moj sajt za duhovnu poeziju",
     author: "@natasa",
     image: `/static/favicon.ico`,
-    // siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://duhovnost.netlify.app`,
   },
 
 
@@ -40,7 +42,8 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-netlify-cms`,
-
+    `gatsby-plugin-sitemap`,
+    'gatsby-plugin-robots-txt',
 
     {
       resolve: `gatsby-source-filesystem`,
@@ -72,7 +75,26 @@ module.exports = {
         ],
         display: 'swap'
       }
-    }
+    },
+
+
+
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://duhovnost.netlify.app',
+        sitemap: 'https://duhovnost.netlify.app/sitemap.xml',
+        resolveEnv: () => process.env.GATSBY_ENV,
+        env: {
+          development: {
+            policy: [{ userAgent: '*', disallow: ['/'] }]
+          },
+          production: {
+            policy: [{ userAgent: '*', allow: '/' }]
+          }
+        }
+      }
+    },
 
 
 

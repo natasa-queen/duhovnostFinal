@@ -7,8 +7,8 @@ const Error = () => {
         <Layout>
             <div className="error-page">
                 <h1>404</h1>
-                <p>Page not found</p>
-                <p>Ups! Nešto ne valja!</p>
+                <h3>Page not found</h3>
+                <h3>Ups! Nešto ne valja!</h3>
             </div>
         </Layout>
     )
