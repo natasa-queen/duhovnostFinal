@@ -5,6 +5,10 @@ backend:
 media_folder: static/images
 public_folder: ../../static/images/
 
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
 collections:
   - name: 'pesme'
     preview: false

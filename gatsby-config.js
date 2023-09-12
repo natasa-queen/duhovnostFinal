@@ -43,7 +43,7 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sitemap`,
-    'gatsby-plugin-robots-txt',
+
 
     {
       resolve: `gatsby-source-filesystem`,
