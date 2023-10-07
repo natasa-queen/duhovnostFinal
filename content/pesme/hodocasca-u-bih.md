@@ -1,5 +1,5 @@
 ---
-title: Hodocasca u BiH
+title: Hodočašća u BiH
 date: 2023-07-02T10:54:14.266Z
 objavljeno: (*objavljeno u "Katoličkom tjedniku" (br. 26/23))
 ---
