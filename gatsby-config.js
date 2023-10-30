@@ -78,21 +78,12 @@ module.exports = {
     },
 
 
-
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://duhovnost.netlify.app',
         sitemap: 'https://duhovnost.netlify.app/sitemap.xml',
-        resolveEnv: () => process.env.GATSBY_ENV,
-        env: {
-          development: {
-            policy: [{ userAgent: '*', allow: ['/'] }]
-          },
-          production: {
-            policy: [{ userAgent: '*', allow: '/' }]
-          }
-        }
+        policy: [{userAgent: '*', allow: '/'}]
       }
     },
 
