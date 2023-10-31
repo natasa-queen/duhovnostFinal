@@ -3,4 +3,3 @@ Disallow: /admin/
 Disallow: /login/
 Disallow: /logout/
 Sitemap: https://duhovnost.netlify.app/sitemap.xml
-
